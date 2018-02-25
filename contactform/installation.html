@@ -1,0 +1,222 @@
+<?php include('../../spidertracker/spidertracker.php'); ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta name="google-site-verification" content="jFBLmn6iZHr6cayHclnahjEKsnvQR9pBdURo-UnfDmk">
+		<title>Contact Form Homepage | PHP Contact Form Script - Installation</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv">
+    <link rel="stylesheet" href="css/style-print.css" type="text/css" media="print">
+		
+
+    <meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="content-language" content="de">
+		
+		<meta name="description" content="Installation of PHP Contact Form Script for the Homepage!">
+
+		<meta name="keywords" content="Kontaktformular, kostenlos, Mailformular, Kontakt, kostenloses, Formular, Formular Script, Script, PHP Formular Script, PHP Script, Homepage, Website, PHP, Spamschutz, Captcha, Antispam">
+		<meta name="robots" content="index,follow">
+		<link rel="shortcut icon" href="http://www.kontaktformular.com/favicon.ico">
+		
+	</head>
+
+
+<body>
+<div id="wrapper">
+
+		<!-- Header -->
+		<div id="header">
+<div>
+<a style="background-image: url(country-flags/en.png); height: 13px; text-indent: -9999px; width: 20px; float:right;" href="http://www.kontaktformular.com/en/installation-script-php-contact-form.html">English</a>  <a style="background-image: url(country-flags/de.png); height: 13px; text-indent: -9999px; width: 20px; float:right;" href="http://www.kontaktformular.com/installation-script-php-kontakt-formular.html">German</a>
+</div>
+
+			
+		<h1><a href="http://www.kontaktformular.com/en" title="PHP Contact Form Script">Kontaktformular.com</a></h1>	
+			
+		
+			
+			<h2>Less is much more.</h2>
+			
+
+			<div id="header-arrow"></div>
+		</div>
+		<!-- Header end -->
+
+		
+
+<hr class="noscreen">
+
+	<div id="content-box">
+		<div id="content-box-in">
+
+			<a name="skip-menu"></a>
+			<!-- Content left -->
+			<div class="content-box-left">
+				<div class="content-box-left-in">
+					<h3>Installation - PHP Contact Form Script</h3>
+					<p><b>Text Guide</b></p></div>
+   <div class="content-box-left-install">
+   
+   <ol>
+   
+   <li><p>Download the contactform.zip file from my website at <a href="http://www.kontaktformular.com/en/download-script-php-contact-form.html">download</a>.</p></li>
+   
+   <li><p>Open the file contactform.zip (with winrar or winzip) and extract all the files from this archive to an folder of your choice on your harddisk-drive. In this case I name it "contactform". </p></li>
+   
+   <li><p>Now after all the files extracted to the folder "contactform" - close the software winrar/winzip. </p></li>
+   
+   <li><p>Open the file "config.php" in the folder "contactform" with an editor of your choice (e.g. notepad2: http://notepad2.softonic.de). </p></li>
+   
+   <li><p>Go down to line 2 and 3 and add your email address and your (company)name between the inverted comma. </p></li>
+   
+   <li><p>Save the config.php file. </p></li>
+   
+   <li><p>If you want to have an upload function for your visitors, open the upload.php file. </p>
+   
+   <p>By means of the annotation you can now set up the configuration for the uploadfield. Amongst others you have the option between sending files to your email address ( standard ) or via an upload to a folder on your server. Detailed information on all configurations you find with comments in the upload.php file. </p></li>
+   
+   <li><p>Upload all your files (including upload.php) on your server and open the file test.php in your browser. Enter your email address in this formular only to check if the mail function is set up correctly. After pushing the send button you should receive a test email within a few seconds. For security reasons please delete the test.php. Please move on to the next step. </p></li>
+   
+   <li><p>Now open the file contact.php with your browser. <strong>The contact form is now ready for use.</strong> If there is no security code visible then you will find a troubleshooting at the bottom of this page. </p></li>
+   
+   </ol>
+
+</div><br>
+				
+				
+				
+		<div class="content-box-left-in"><p><b>Integration in an existing page</b></p></div>
+   <div class="content-box-left-install"><p>There are two possibilities to add this php formular in your webpage. Either by I-Frame (very simple!) or with the php include command. </p>
+   
+      <p><b>I-Frame</b></p> 
+
+ <ol>
+   <li><p>With IFrame it is quite simple. Please just add the following code to your required page. <b>&lt;iframe src ="contact.php" frameborder="0" width="450" height="700">&lt;/iframe></b> The width and height of this inline frame can be customized as you wish. Please make sure that the path of the contact.php is correct. In case the file is stored in a folder (e.g. contacform) please change the path to: "contactform/contact.php".</p> </li>
+   
+   <li><p>The width and height of this inline frame can be customized as you wish. </p> </li>
+   
+    <li><p>Finish! </p> </li></ol>
+     <p><b>PHP Include</b></p> 
+     <ol><li><p>Now let´s go to the second possibility.</p> </li>
+     
+      <li><p>To add this contact-formular via php include command to an existing page it is required to have the file extension .php. </p> </li>
+      
+       <li><p>Example: You want to add the contact-formular ( contact.php ) to your impressum ( impressum.html ). Before you start the process you need to rename the file impressum.html to impressum.php.</p> </li>
+       
+        <li><p>Now open the file impressum.php with an editor and add at the first line of the file ( line 1 ) the following php code:
+<b>&lt;?php session_start() ?></b></p> </li>
+        
+         <li><p>Now add the following code to the required position in the impressum.php. to integrate the contact formular: <b>&lt;?php include("contact.php"); ?></b>. <br><br>In case the file is stored in a folder ( e.g. contacformular ) please change code suitable.
+	Based on the folder name <b>contactform</b> in our case it would be 
+	<b>&lt;?php include("contactform/contact.php"); ?></b></p> </li>
+         
+          <li><p>In case the file is stored in a folder ( e.g. contacformular ) please change code suitable. Based on the folder name contactform in our case it would be ?php include("contactform/contact.php"); ?</p> </li>
+          
+           <li><p>Furthermore it is necessary to change the path to the captcha.php if the formular from our example is in the folder "contactform". Open the file contact.php with an editor and scroll down to the line 466, 467 and 468. In each case please change in line 466 and 467 the path to captcha.php. The path descriptions are marked in double quota. In our example with the folder name contactform you need to change the path to the captcha.php as following: "contactform/captcha/captcha.php". In line 468 change the path to icon-reload.gif into "contactform/icon-reload.gif"</p> </li>
+           
+            <li><p>Additionally the file thankyou.php should also be copied in the same folder as impressum.php. As an alternative you can create a new danke / "thankyou" page.</p> </li>
+            
+             <li><p>The contact form should be working now on page impressum.php.</p> </li>
+             
+              <li><p>Do you want to have the impressum.php shown again as impressum.html in your browser then you need to create a file called .htaccess. This file has to be in the same folder as impressum.php. Please add the following content into the .htaccess file: RewriteEngine on RewriteRule impressum.html$ /impressum.php Now you can access the file impressum.php as impressum.html in your browser. ;-)</p> </li>
+              
+
+                 
+                 	</ol></div>
+		
+				
+				
+				<div class="content-box-left-in"><h3>Some error-messages</h3>
+				
+<p style="color:red;"><b>Help! The security code does not show.</b></p></div>
+
+  <div class="content-box-left-install"><ol> 
+  
+  <li><p>If no security code is shown after installation please open the file document_root.php within the folder captcha in your browser. (not with the editor!) Now you see the absolute path of the server. </p></li>
+
+     <li><p>In my example it is: /home/www/ </p></li>
+     
+       <li><p>Mark the absolute path and copy it into the clipboard. (mark - right mouse button - copy)</p></li>
+       
+         <li><p>Open the file captcha.php within the folder captcha and scroll down to line 64. ($ttf = "/Imperator.ttf";)</p></li>
+         
+           <li><p>Important: Now insert the absolute server path from the clipboard before /Imperator.ttf.</p></li>
+           
+             <li><p>In my example: $ttf = "/home/www/Imperator.ttf";</p></li>
+             
+               <li><p>As the font is likely not in the root directory (main directory) of your server you need to amend the path.
+
+For example if the contact formular script is located in the folder contactform the path must look as follows: $ttf = "/home/www/contactform/captcha/Imperator.ttf";
+
+Certainly you might not forget to mention the folder captcha as the font is deposited there. ;-)</p></li>
+               
+                 <li><p>The security code should be shown up now.</p></li>
+                 
+                 
+                 
+      </ol></div><br>
+  
+     <div> <p style="color:red;"><b>I became this failure...: Parse error: syntax error, unexpected T_STRING, expecting T_OLD_FUNCTION or T_FUNCTION or T_VAR or \'}\' in /var/www/***/html/***/AntiSpam.php on line 17</b></p></div>
+			   
+			     <div class="content-box-left-install"><ol> 
+  
+  <li><p>It is very important that is PHP 5.2 installed on your server, when you use the contactform with securityquestion.</p></li>
+
+     <li><p>If your server has installed PHP 4 or older, please contact your webhoster. That change this free.</p></li>
+     
+                 
+                 
+                 
+      </ol></div>
+      
+
+	
+
+				<div class="content-box-left-in"> <h3>Info</h3></div>
+
+<div class="content-box-left-install"><p>With this script you can give your visitors the possibility to get in contact with you. This formular will be sent by mail to the webmaster. There is a security code to protect you against spam. Additionally there is an option to add an email attachment field. You are not allowed to remove the copyright endorsement in the footer of the script. If you want to remove copyright though you have to buy a non-copyright licence. For commercial use, you have to buy a commercial licence. For this please use the <a href="http://www.kontaktformular.com/en/licence-script-php-contact-form.html">purchase order form</a>. </p></div>
+
+
+				
+				
+				
+				
+				
+				
+				
+			</div>
+			<!-- Content left end -->
+
+<hr class="noscreen">
+
+			<!-- Content right -->
+			<div class="content-box-right">
+				<h4>Individual Formmailer</h4>
+				<div class="content-box-right-in">
+					<dl>
+						<dd class="heading"></dd>
+							<dd>Do you need an individual inquiry form for your homepage? No problem! <a href="http://www.kontaktformular.com/en/individual-script-php-contact-form.html">Write to us!</a></dd>
+						
+					</dl>
+				</div>
+			<div id="column-right-bottom">&nbsp;</div>
+			</div>
+			<!-- Content right end -->
+			<div class="cleaner">&nbsp;</div>
+		</div>
+	</div>
+
+<hr class="noscreen">
+
+<!-- Footer -->
+	<div id="footer">
+		<p class="left"><a class="b" href="imprint-script-php-contact-form.html">Imprint</a></p>
+		<p class="right">&copy; 2011 kontaktformular.com</p>
+	</div>
+	<!-- Footer end -->
+</div>
+<script type="text/javascript" src="http://www.kontaktformular.com/stat/track.php?mode=js"></script>
+<noscript><img src="http://www.kontaktformular.com/stat/track.php?mode=img<?php echo "&amp;ref=".$_SERVER [ "HTTP_REFERER" ]; ?>" border="0" alt="" width="1" height="1"></noscript></body>
+</html>

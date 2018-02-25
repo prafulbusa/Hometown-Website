@@ -1,0 +1,68 @@
+body{background-color: #FFFFFF;}
+
+.kontaktformular  {
+	 width:  380px;
+     margin: 0px 0;
+     padding: 10px;
+     font-size: 11px;
+     font-family: Tahoma, Verdana, Arial;
+     border: 1px solid #666666;
+     background: #F5F5F5;
+     float: left;
+     clear: both;
+     }
+     
+.kontaktformular fieldset {margin: 10px 0;}
+.kontaktformular a {color: #990000; text-decoration: none;}
+.kontaktformular a:hover {color: #483D8A;}
+  
+.kontaktformular legend {
+	 background: #006794;
+	 color: #fff;
+	 padding: 3px 5px;
+	 border: 1px solid #ddd;
+	 text-transform: uppercase;
+	 }
+	  
+.kontaktformular label {
+     width: 100px;
+	 float: left;
+     clear: both;
+     padding: 3px 10px;
+     margin: 3px 0;
+     }
+          
+.kontaktformular input, .kontaktformular textarea {
+     border-right: 1px solid #ddd; 
+     border-bottom: 1px solid #ddd;
+     border-left: 1px solid #666666; 
+     border-top: 1px solid #666666;
+     background: #ddc;
+     padding: 0px 3px;
+     margin: 3px 0;
+	 width: 200px;
+}
+
+.kontaktformular input:active, .kontaktformular input:focus, .kontaktformular input:hover { background: #ffff88;}
+.kontaktformular textarea:active, .kontaktformular textarea:focus, .kontaktformular textarea:hover { background: #ffff88;}
+
+.kontaktdaten table, .anfrage table, .captcha table { border-spacing:0px; width:360px; border:0px solid;}
+.label { width:100px; padding:0px;}
+.field { width:250px; padding:0px;}
+.error { width:200px; padding:0px 0px 0px 5px;}
+.captchareload { padding-left:10px;}
+input.errordesignfields, textarea.errordesignfields { background-color:#cc3333;}
+
+
+
+
+.buttons input { width:80px;}
+.buttons input, .captchareload img { background: #555555; color: #fff; border-top:2px solid #fff; border-left:2px solid #fff; border-bottom:2px solid #666666; border-right:2px solid #666666;}
+.buttons input:hover, .captchareload img:hover { background: #555555; color: #fff; border-top:2px solid #ddd; border-left:2px solid #ddd; border-bottom:2px solid #fff; border-right:2px solid #fff;}
+
+.pflichtfeld {
+	 color: #800000;}
+	 
+
+	 .zurueck {
+	 color: #6891D1;}
